@@ -1,28 +1,24 @@
-# DEPRECATION NOTICE
-
-This module is deprecated. If you want to painlessly lock your dependencies and
-check they are in sync you should use [yarn](https://github.com/yarnpkg/yarn)
-and pretend `npm shrinkwrap` ( and this module ) never existed.
-
-npm-shrinkwrap-check
+shrinkwrap-check
 ====================
 
 Checks that `package.json` and `npm-shrinkwrap.json` files are always in sync so you
 don't commit out-of-sync dependencies in your code.
+
+_Same as `npm-shrinkwrap-check`, but without deprecation notice._
 
 installation
 ============
 
 Install it globally running
 
-`$ npm install -g npm-shrinkwrap-check`
+`$ npm install -g shrinkwrap-check`
 
 usage
 =====
 
 In a folder that contains a `package.json` run the following command:
 
-`$ npm-shrinkwrap-check`
+`$ shrinkwrap-check`
 
 This will perform the following checks:
 
@@ -44,15 +40,14 @@ Options:
 add as git hook
 ===============
 
-It is a good practice that you add `npm-shrinkwrap-check` as a [git hook](http://git-scm.com/docs/githooks).
+It is a good practice that you add `shrinkwrap-check` as a [git hook](http://git-scm.com/docs/githooks).
 
 To add a `pre-push` hook create a `.git/hooks/pre-push` in your repo with the following:
 
 ```sh
 #!/bin/sh
 
-npm-shrinkwrap-check
+shrinkwrap-check
 ```
 
 This will prevent you from pushing out-of-sync `package.json` and `npm-shrinkwrap.json` files to your repo.
-

@@ -1,17 +1,20 @@
 {
-  "name": "npm-shrinkwrap-check",
+  "name": "shrinkwrap-check",
   "version": "0.1.4",
   "description": "Checks that package.json and npm-shrinkwrap.json are always in sync.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:teambox/npm-shrinkwrap-check"
+    "url": "git@github.com:alexindigo/shrinkwrap-check.git"
   },
   "main": "bin/cli",
   "bin": {
-    "npm-shrinkwrap-check": "bin/cli"
+    "npm-shrinkwrap-check": "bin/cli",
+    "shrinkwrap-check": "bin/cli"
   },
   "keywords": [
-    "shrinkwrap"
+    "npm",
+    "shrinkwrap",
+    "check"
   ],
   "author": "Redbooth",
   "license": "MIT",
